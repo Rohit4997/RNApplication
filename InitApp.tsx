@@ -5,12 +5,16 @@
  * @format
  */
 
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import Home from './Screens/Home';
+import StackNavigator from './src/Navigator/StackNavigator';
+import Home from './src/Screens/Home';
  
  function InitApp(): JSX.Element {
    return (
-    <Home/>
+    <NavigationContainer>
+      <StackNavigator/>
+    </NavigationContainer>
    );
  }
 
